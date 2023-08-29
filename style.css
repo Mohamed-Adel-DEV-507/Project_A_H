@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --whitecolor: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+    font-size: 15px;
+    background: var(--VeryLightGray);
+}
+
+.container{
+    
+    width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0 ;
+}
+
+.container .row{
+ text-align: center;
+ width: 50%;
+ height: 20%;
+ margin: 0 auto;
+}
+
+.container .row .p1{
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--GrayishBlue);
+}
+
+
+.container .row h1{
+    font-size: 27px;
+    color: var(--VeryDarkBlue);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.container .row .p2{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--GrayishBlue);
+
+}
+
+
+
+.cards{
+    margin-top: 70px;
+}
+
+
+
+.cards .box1{
+    background: var(--whitecolor);
+    padding: 29px 25px;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(216, 226, 238, 75) ;
+}
+
+.cards .box1:nth-of-type(1){
+    border-color: var(--Cyan);
+}
+
+.cards .box1 h3{
+    color: var(--VeryDarkBlue);
+}
+
+.cards .box1 p{
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+}
+
+.cards .box1 img{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+
+.cards .box2{
+    background: var(--whitecolor);
+    padding: 29px 25px;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(216, 226, 238, 75) ;
+}
+
+.cards .box2:nth-of-type(2){
+    border-color: var(--Red);
+}
+
+
+.cards .box2 h3{
+    color: var(--VeryDarkBlue);
+}
+
+.cards .box2 p{
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+}
+
+.cards .box2 img{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+
+.cards .box3{
+    background: var(--whitecolor);
+    padding: 29px 25px;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(216, 226, 238, 75) ;
+}
+
+.cards .box3:nth-of-type(3){
+    border-color: var(--Blue);
+}
+
+
+.cards .box3 h3{
+    color: var(--VeryDarkBlue);
+}
+
+.cards .box3 p{
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+}
+
+.cards .box3 img{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+
+
+.cards .box4{
+    background: var(--whitecolor);
+    padding: 29px 25px;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(216, 226, 238, 75) ;
+}
+
+.cards .box4:nth-of-type(4){
+    border-color: var(--Orange);
+}
+
+.cards .box4 h3{
+    color: var(--VeryDarkBlue);
+}
+
+.cards .box4 p{
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+}
+
+.cards .box4 img{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+@media(min-width: 768px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 352px);
+        column-gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1200px){
+    .cards{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0; 
+    }
+
+    .cards .box1,.box3{
+        transform: translateY(50%);
+    }
+}
